@@ -3,7 +3,7 @@ const app = require("./app");
 const mongoose = require("mongoose");
 const port = process.env.PORT || 3000;
 mongoose.set("strictQuery", true);
-const DB = process.env.DATABASE;
+const DB = process.env.URI;
 
 mongoose
   .connect(DB)
